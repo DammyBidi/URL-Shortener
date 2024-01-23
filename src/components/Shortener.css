@@ -54,6 +54,11 @@ nav {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: hsl(180, 66%, 69%) !important;
+  
+}
+
 .hero {
   display: flex;
   align-items: center;
@@ -236,6 +241,10 @@ form {
 
 .violet-button {
   background-color: hsl(257, 27%, 26%) !important;
+}
+
+.violet-button:hover {
+  background-color: hsl(257, 27%, 46%) !important;
 }
 
 .statistics {

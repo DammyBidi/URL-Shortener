@@ -217,7 +217,7 @@ export default {
         this.saveToLocalStorage();
         setTimeout(() => {
           this.shortenedLinks[index].copied = false;
-        }, 2000);
+        }, 3000);
       });
     },
     saveToLocalStorage() {
