@@ -281,7 +281,8 @@ form {
   font-size: 1.2rem;
   font-weight: 400;
   color: hsl(0, 0%, 75%);
-  width: 50%;
+  margin: 0 auto;
+  width: 40%;
 }
 
 .cards {
@@ -567,6 +568,10 @@ footer {
     
     gap: 5rem;
     padding-bottom: 0;
+  }
+
+  .statistics-title p {
+    width: 100%;
   }
 
   .cards {
