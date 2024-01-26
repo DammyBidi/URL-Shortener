@@ -14,6 +14,10 @@ nav {
   margin: 2rem 5rem;
 }
 
+.hamburger {
+  display: none;
+}
+
 .links {
   display: flex;
   align-items: center;
@@ -54,8 +58,9 @@ nav {
   cursor: pointer;
 }
 
-button:hover {
+button:hover  {
   background-color: hsl(180, 66%, 69%) !important;
+  
   
 }
 
@@ -151,7 +156,7 @@ form {
   font-size: 1.3rem;
   font-weight: 400;
   font-family: Poppins;
-  outline: none;
+  /* outline: none; */
   border: none;
  
 }
@@ -179,7 +184,7 @@ form {
 ::placeholder {
   font-family: Poppins;
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 500;
   color: hsl(257, 7%, 63%);
   padding: 2rem 1.5rem;
 }
@@ -276,6 +281,7 @@ form {
   font-size: 1.2rem;
   font-weight: 400;
   color: hsl(0, 0%, 75%);
+  width: 50%;
 }
 
 .cards {
@@ -397,6 +403,7 @@ footer {
   display: flex;
   gap: 1rem;
   align-items: self-start;
+  align-content: center;
 }
 
 .footer-logo h3 {
@@ -419,6 +426,239 @@ footer {
   font-weight: 400;
   color: hsl(0, 0%, 75%);
   text-decoration: none;
+}
+
+/* FOR MOBILE */
+
+@media screen and (max-width: 950px) {
+
+
+  nav {
+    
+    margin: 2rem 1rem;
+    justify-content: space-between;
+  }
+
+ 
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  ion-icon {
+    font-size: 64px;
+    color: hsl(0, 0%, 69%);
+   
+  }
+
+
+  .links a,.login {
+    display: none;
+  }
+
+  
+  .hero{
+    flex-direction: column-reverse;
+    margin: 0;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 1rem;
+    margin-bottom: 12rem;
+  
+   
+  }
+
+  .hero .text {
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  .hero .text h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .hero .text p {
+    font-size: 1.3rem;
+  }
+
+  .hero .image {
+    width: 100%;
+    align-items: center;
+   
+  }
+
+  .hero .image img {
+    width: 100%;
+  }
+
+  .form {
+   
+    margin: 0 1rem;
+    background-image: url("/src/assets/bg-shorten-mobile.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    bottom: -18rem;
+    
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+
+  
+  .form button {
+    align-self: center;
+    width: 100%;
+  }
+
+  ::placeholder {
+    padding: 1rem 0rem;
+  }
+
+  .link-section {
+    margin: 0 1rem;
+    padding-top: 7.5rem;
+    
+    
+  }
+
+  .link-container {
+    flex-direction: column;
+    
+    width: 100%;
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+  }
+
+ 
+
+  .short-link {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    
+  }
+
+  .short-link span {
+    margin-right: 0;
+    
+  }
+
+  .short-link button {
+    width: 100%;
+  }
+
+  .statistics {
+    margin: 6rem 1rem 0;
+    
+    gap: 5rem;
+    padding-bottom: 0;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 4rem;
+    padding-bottom: 5rem;
+    
+  }
+
+  .c2, .c3 {
+    position: static;
+    top: 0;
+  }
+
+  .card-icon {
+    
+    position: relative;
+    top: -2rem;
+    width: 20%;
+    
+  }
+
+  .card {
+    width: 100%;
+    padding: 2rem 1rem;
+    padding-top: 0;
+    align-items: center;
+  }
+
+  .card h3 {
+    margin-top: 0;
+  }
+
+  .card p {
+    text-align: center;
+  }
+
+  .boost {
+    padding: 5rem 0.5rem;
+    gap: 1rem;
+    text-align: center;
+    background-image: url("/src/assets/bg-boost-mobile.svg");
+  }
+
+  .boost h2 {
+    font-size: 2rem;
+  }
+
+  footer {
+    flex-direction: column;
+    margin: 0 1rem;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .footer-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-logo h3 {
+    font-size: 2.5rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+  
+ 
+  
 }
 
 

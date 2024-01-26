@@ -13,6 +13,10 @@
         <a href="">Login</a>
         <button>Sign Up</button>
       </div>
+      <div class="hamburger">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+      
     </nav>
     <header>
       <div class="hero">
@@ -78,7 +82,7 @@
         <div class="statistics-title">
           <h2>Advanced Statistics</h2>
           <p>
-            Track how your links are performing across the web <br />
+            Track how your links are performing across the web
             with our advanced statistics dashboard.
           </p>
         </div>
@@ -106,8 +110,8 @@
             </div>
             <h3>Detailed Records</h3>
             <p>
-              Gain insights into who is clicking your <br />
-              links. Knowing when and where <br />
+              Gain insights into who is clicking your 
+              links. Knowing when and where
               people engage with your content helps inform better decisions.
             </p>
           </div>
