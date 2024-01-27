@@ -141,6 +141,7 @@
               customizable links, supercharging audience engagement.
             </p>
           </div>
+          <div class="connect-line"></div>
         </div>
       </div>
     </div>

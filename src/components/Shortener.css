@@ -290,8 +290,9 @@ form {
 .cards {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  /* gap: 2rem; */
   position: relative;
+  z-index: 2;
 }
 
 .c2 {
@@ -324,6 +325,7 @@ form {
   padding: 2rem 1.5rem;
   width: 30%;
   position: relative;
+  
 }
 
 .card h3 {
@@ -341,6 +343,17 @@ form {
   font-weight: 400;
   color: hsl(0, 0%, 75%);
 }
+
+.connect-line {
+  position: absolute;
+  border-top: 0.6rem solid hsl(180, 66%, 49%);
+  width: 100%;
+  top: 11rem;
+  z-index: -1;
+}
+
+
+
 
 .boost {
   display: flex;
@@ -644,7 +657,7 @@ footer {
 
   .cards {
     flex-direction: column;
-    gap: 4rem;
+    gap: 6rem;
     padding-bottom: 5rem;
     
   }
@@ -675,6 +688,15 @@ footer {
 
   .card p {
     text-align: center;
+  }
+
+  .connect-line {
+    border-left: 0.6rem solid hsl(180, 66%, 49%);
+    width: 0;
+    height: 80%;
+    right: 49%;
+    top: 0;
+    
   }
 
   .boost {
