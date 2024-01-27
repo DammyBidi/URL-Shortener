@@ -14,7 +14,7 @@ nav {
   margin: 2rem 5rem;
 }
 
-.hamburger {
+.mobile-nav-toggle {
   display: none;
 }
 
@@ -442,11 +442,72 @@ footer {
 
  
 
-  .hamburger {
+  .mobile-nav-toggle {
     display: block;
     cursor: pointer;
   }
 
+  .mobile-nav {
+    background-color: hsl(257, 27%, 26%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 1rem;
+    padding: 3rem 2rem;
+    
+    border-radius: 0.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    
+  }
+
+  .mobile-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .mobile-nav hr {
+    width: 100%;
+    border: 0.4px solid  hsl(0, 0%, 95%);
+    
+  }
+
+  .mobile-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .mobile-links a, .mobile-login a {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: Poppins;
+    text-decoration: none;
+  }
+
+  .mobile-login button {
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    border: none;
+    padding: 0.5rem 5.8rem;
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: Poppins;
+    cursor: pointer;
+  }
+
+
+
+  
   ion-icon {
     font-size: 64px;
     color: hsl(0, 0%, 69%);
@@ -456,6 +517,10 @@ footer {
 
   .links a,.login {
     display: none;
+  }
+
+  .links h3 {
+    font-size: 2.5rem;
   }
 
   

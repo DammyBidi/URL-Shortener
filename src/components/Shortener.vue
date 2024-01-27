@@ -13,12 +13,24 @@
         <a href="">Login</a>
         <button>Sign Up</button>
       </div>
-      <div class="hamburger">
+      <div class="mobile-nav-toggle" @click="toggleMobileNav">
         <ion-icon name="menu-outline"></ion-icon>
       </div>
-      
     </nav>
     <header>
+      <!-- Mobile navigation -->
+      <div class="mobile-nav" v-if="showMobileNav">
+        <div class="mobile-links">
+          <a href="">Features</a>
+          <a href="">Pricing</a>
+          <a href="">Resources</a>
+        </div>
+        <hr>
+        <div class="mobile-login">
+          <a href="">Login</a>
+          <button>Sign Up</button>
+        </div>
+      </div>
       <div class="hero">
         <div class="text">
           <h1>More than just shorter links</h1>
@@ -82,8 +94,8 @@
         <div class="statistics-title">
           <h2>Advanced Statistics</h2>
           <p>
-            Track how your links are performing across the web
-            with our advanced statistics dashboard.
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
           </p>
         </div>
         <div class="cards">
@@ -110,9 +122,9 @@
             </div>
             <h3>Detailed Records</h3>
             <p>
-              Gain insights into who is clicking your 
-              links. Knowing when and where
-              people engage with your content helps inform better decisions.
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
             </p>
           </div>
           <div class="card c3">
@@ -184,6 +196,7 @@ export default {
       originalUrl: "",
       shortenedLinks: JSON.parse(localStorage.getItem("shortenedLinks")) || [],
       errorMessage: "",
+      showMobileNav: false,
     };
   },
   methods: {
@@ -229,6 +242,9 @@ export default {
         "shortenedLinks",
         JSON.stringify(this.shortenedLinks)
       );
+    },
+    toggleMobileNav() {
+      this.showMobileNav = !this.showMobileNav;
     },
   },
 };
