@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/DammyBidi/URL-Shortener)
-- Live Site URL: [Add live site URL here](https://dammyurlshortener.netlify.app/)
+- Solution URL: [Solution URL here](https://github.com/DammyBidi/URL-Shortener)
+- Live Site URL: [live site URL here](https://dammyurlshortener.netlify.app/)
 
 ## My process
 
@@ -73,7 +73,7 @@ Debugging: Faced and resolved challenges related to CORS issues and Vue.js speci
 
 ### Useful resources
 
-- [Example resource 1](https://tinyurl.com/api-create.php?url=) - I used this API Instead of the https://cleanuri.com/api/v1/shorten as the cleanURL Api isnt working .
+- [Resource 1](https://tinyurl.com/api-create.php?url=) - I used this API Instead of the https://cleanuri.com/api/v1/shorten as the cleanURL Api wasn't working .
 
 
 ## Author
