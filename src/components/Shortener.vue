@@ -48,7 +48,7 @@
         </div>
       </div>
       <div class="form">
-        <form crossorigin="anonymous" action="" @submit.prevent="shortenUrl">
+        <form  @submit.prevent="shortenUrl">
           <div class="input-container">
             <input
               type="url"
